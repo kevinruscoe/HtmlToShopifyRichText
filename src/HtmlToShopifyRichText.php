@@ -1,10 +1,10 @@
 <?php
 
-namespace KevinRuscoe\HtmlToShopifyRichText;
+namespace Webfoo\HtmlToShopifyRichText;
 
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\ConversionException;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\JsonEncodingException;
+use Webfoo\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
+use Webfoo\HtmlToShopifyRichText\Exceptions\ConversionException;
+use Webfoo\HtmlToShopifyRichText\Exceptions\JsonEncodingException;
 use Symfony\Component\DomCrawler\Crawler;
 use HTMLPurifier;
 use HTMLPurifier_Config;

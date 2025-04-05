@@ -1,5 +1,5 @@
 {
-    "name": "kevinruscoe/html-to-shopify-rich-text",
+    "name": "webfoo/html-to-shopify-rich-text",
     "description": "A PHP library to convert HTML to Shopify's Rich Text format",
     "type": "library",
     "require": {
@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "KevinRuscoe\\HtmlToShopifyRichText\\": "src/"
+            "Webfoo\\HtmlToShopifyRichText\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KevinRuscoe\\HtmlToShopifyRichText\\Tests\\": "tests/"
+            "Webfoo\\HtmlToShopifyRichText\\Tests\\": "tests/"
         }
     },
     "scripts": {

@@ -1,5 +1,5 @@
 <?php
 
-namespace KevinRuscoe\HtmlToShopifyRichText\Exceptions;
+namespace Webfoo\HtmlToShopifyRichText\Exceptions;
 
 class JsonEncodingException extends HtmlToShopifyRichTextException {} 

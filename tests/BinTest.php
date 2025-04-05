@@ -1,6 +1,6 @@
 <?php
 
-namespace KevinRuscoe\HtmlToShopifyRichText\Tests;
+namespace Webfoo\HtmlToShopifyRichText\Tests;
 
 use PHPUnit\Framework\TestCase;
 

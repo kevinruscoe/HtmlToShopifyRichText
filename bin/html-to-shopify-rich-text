@@ -3,9 +3,9 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use KevinRuscoe\HtmlToShopifyRichText\HtmlToShopifyRichText;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\ConversionException;
+use Webfoo\HtmlToShopifyRichText\HtmlToShopifyRichText;
+use Webfoo\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
+use Webfoo\HtmlToShopifyRichText\Exceptions\ConversionException;
 
 if ($argc < 2) {
     echo "Usage: php html-to-shopify-rich-text <input-html-file>\n";

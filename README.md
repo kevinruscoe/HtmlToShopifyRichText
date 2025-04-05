@@ -18,13 +18,13 @@ A PHP package that converts HTML content to Shopify's Rich Text format. This pac
 You can install the package via Composer:
 
 ```bash
-composer require kevinruscoe/html-to-shopify-rich-text
+composer require webfoo/html-to-shopify-rich-text
 ```
 
 ## Usage
 
 ```php
-use KevinRuscoe\HtmlToShopifyRichText\HtmlToShopifyRichText;
+use Webfoo\HtmlToShopifyRichText\HtmlToShopifyRichText;
 
 $html = '<h1>Hello World</h1><p>This is a <strong>test</strong> paragraph.</p>';
 $richText = HtmlToShopifyRichText::convert($html);

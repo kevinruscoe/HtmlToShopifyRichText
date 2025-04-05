@@ -1,11 +1,11 @@
 <?php
 
-namespace KevinRuscoe\HtmlToShopifyRichText\Tests;
+namespace Webfoo\HtmlToShopifyRichText\Tests;
 
-use KevinRuscoe\HtmlToShopifyRichText\HtmlToShopifyRichText;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\ConversionException;
-use KevinRuscoe\HtmlToShopifyRichText\Exceptions\JsonEncodingException;
+use Webfoo\HtmlToShopifyRichText\HtmlToShopifyRichText;
+use Webfoo\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
+use Webfoo\HtmlToShopifyRichText\Exceptions\ConversionException;
+use Webfoo\HtmlToShopifyRichText\Exceptions\JsonEncodingException;
 use PHPUnit\Framework\TestCase;
 
 class HtmlToShopifyRichTextTest extends TestCase
