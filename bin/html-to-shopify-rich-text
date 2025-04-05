@@ -1,0 +1,55 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use KevinRuscoe\HtmlToShopifyRichText\HtmlToShopifyRichText;
+use KevinRuscoe\HtmlToShopifyRichText\Exceptions\InvalidHtmlException;
+use KevinRuscoe\HtmlToShopifyRichText\Exceptions\ConversionException;
+
+if ($argc < 2) {
+    echo "Usage: php html-to-shopify-rich-text <input-html-file>\n";
+    exit(1);
+}
+
+$inputFile = $argv[1];
+
+if (!file_exists($inputFile)) {
+    echo "Error: Input file '$inputFile' does not exist.\n";
+    exit(1);
+}
+
+try {
+    // Read the HTML content
+    $html = file_get_contents($inputFile);
+    if ($html === false) {
+        echo "Error: Could not read file '$inputFile'.\n";
+        exit(1);
+    }
+
+    // Convert HTML to Shopify Rich Text
+    $json = HtmlToShopifyRichText::convert($html);
+
+    // Generate output filename in the same directory as input
+    $inputDir = dirname($inputFile);
+    $inputFilename = pathinfo($inputFile, PATHINFO_FILENAME);
+    $outputFile = $inputDir . '/' . $inputFilename . '.json';
+
+    // Write the JSON to file
+    if (file_put_contents($outputFile, $json) === false) {
+        echo "Error: Could not write to output file '$outputFile'.\n";
+        exit(1);
+    }
+
+    echo "Successfully converted '$inputFile' to '$outputFile'\n";
+    exit(0);
+} catch (InvalidHtmlException $e) {
+    echo "Error: Invalid HTML - " . $e->getMessage() . "\n";
+    exit(1);
+} catch (ConversionException $e) {
+    echo "Error: Conversion failed - " . $e->getMessage() . "\n";
+    exit(1);
+} catch (\Exception $e) {
+    echo "Error: " . $e->getMessage() . "\n";
+    exit(1);
+} 

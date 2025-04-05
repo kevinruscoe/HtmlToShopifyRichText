@@ -1,0 +1,42 @@
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# PHPUnit
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+
+# PHP CS Fixer
+.php-cs-fixer.cache
+.php_cs.cache
+
+# IDE & Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+/build/
+/dist/
+/docs/
+
+# Cache and logs
+/var/
+/log/
+*.log
+*.cache
+
+# Test coverage reports
+clover.xml
+coverage.xml 
