@@ -3,6 +3,7 @@
     "description": "A PHP library to convert HTML to Shopify's Rich Text format",
     "type": "library",
     "version": "1.0.1",
+    "license": "MIT",
     "require": {
         "php": "^8.3",
         "ext-dom": "*",
